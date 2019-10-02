@@ -99,7 +99,6 @@
 
   var getUID = function getUID(prefix) {
     do {
-      // eslint-disable-next-line no-bitwise
       prefix += ~~(Math.random() * MAX_UID); // "~~" acts like a faster Math.floor() here
     } while (document.getElementById(prefix));
 
@@ -204,13 +203,12 @@
   var OffsetMethod = {
     OFFSET: 'offset',
     POSITION: 'position'
-    /**
-     * ------------------------------------------------------------------------
-     * Class Definition
-     * ------------------------------------------------------------------------
-     */
-
   };
+  /**
+   * ------------------------------------------------------------------------
+   * Class Definition
+   * ------------------------------------------------------------------------
+   */
 
   var ScrollSpy =
   /*#__PURE__*/

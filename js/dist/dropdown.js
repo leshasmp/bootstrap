@@ -131,7 +131,6 @@
     return [].slice.call(nodeList);
   };
 
-
   var noop = function noop() {
     return function () {};
   };
@@ -222,13 +221,12 @@
     reference: '(string|element)',
     display: 'string',
     popperConfig: '(null|object)'
-    /**
-     * ------------------------------------------------------------------------
-     * Class Definition
-     * ------------------------------------------------------------------------
-     */
-
   };
+  /**
+   * ------------------------------------------------------------------------
+   * Class Definition
+   * ------------------------------------------------------------------------
+   */
 
   var Dropdown =
   /*#__PURE__*/
@@ -448,9 +446,8 @@
           preventOverflow: {
             boundariesElement: this._config.boundary
           }
-        } // Disable Popper.js if we have a static display
-
-      };
+        }
+      }; // Disable Popper.js if we have a static display
 
       if (this._config.display === 'static') {
         popperConfig.modifiers.applyStyle = {
